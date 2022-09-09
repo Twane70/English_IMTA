@@ -13,7 +13,7 @@
         "nom": "Figma",
         "prix": 40,
         "categorie": "Freinage",
-        "image": "images/figma.svg",
+        "image": "images/figma.png",
         "description": "J'aime la galette",
         "disponibilite": true
     },
@@ -22,7 +22,7 @@
         "nom": "After Effect",
         "prix": 5.49,
         "categorie": "Optiques",
-        "image": "images/aftereffect.svg",
+        "image": "images/aftereffect.png",
         "description": "Quand elle est bien faite",
         "disponibilite": false
     }
