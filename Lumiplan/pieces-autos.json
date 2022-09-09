@@ -4,7 +4,7 @@
         "nom": "Photoshop",
         "prix": 60,
         "categorie": "Optiques",
-        "image": "images/photoshop.svg",
+        "image": "images/photoshop.png",
         "description": "Pas de license à renouveler",
         "disponibilite": true
     },
