@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "nom": "Ampoule LED",
+        "nom": "Logiciel n°1",
         "prix": 60,
         "categorie": "Optiques",
         "image": "images/ampoule-led.png",
-        "description": "Distance d’éclairage : 100 mètres !",
+        "description": "Pas de license à renouveler",
         "disponibilite": true
     },
     {
