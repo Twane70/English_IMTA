@@ -10,7 +10,7 @@ function onSubmit(form) {
   // 2
   const token = btoa(`${login}:${password}`);
   const request = new Request(
-    `https://api.github.com/repos/${org}/${repo}/contents/`,
+    `https://api.github.com/repos/${org}/${repo}/contents/content.html`,
     {
       method: 'GET',
       credentials: 'omit',
