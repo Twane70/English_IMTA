@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Web Designer - Développeur - Data Scientist',
   keywords: ["Photosphere", "BG", "Hello Bong", "Haricot rouge"],
   openGraph: {
-    images: 'https://www.eff.org/files/banner_library/patent-troll-3b.png',
+    images: '/carte.png',
   },
   icon: '/icon.ico',
 };
