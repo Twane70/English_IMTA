@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Header from '../components/Header';
+import Header from '../components/Header'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,6 +12,7 @@ export const metadata = {
   openGraph: {
     images: 'https://www.eff.org/files/banner_library/patent-troll-3b.png',
   },
+  icon: '/icon.ico',
 };
 
 
