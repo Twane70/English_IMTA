@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <motion.main id="Accueil" variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
       <Image 
-        src="/images/background_zbi.jpg"
+        src={`/images/background_zbi.jpg`}
         fill={true}
         alt="background"
         priority={true}
