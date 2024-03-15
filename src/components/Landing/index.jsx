@@ -48,6 +48,7 @@ export default function Home() {
       <Image 
         src={`/images/antoine_background.jpg`}
         fill={true}
+        priority={true}
         alt="picture of author"
       />
       <div className={styles.sliderContainer}>
