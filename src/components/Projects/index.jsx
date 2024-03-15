@@ -11,10 +11,10 @@ const projects = [
   {
     title: "Paldex",
     type: "Animation 3D | Design",
-    src: "paldex_screen.gif",
+    src: "paldex_cropped.gif",
     color: "#5f823c",
     link: "https://www.paldex.fr",
-    description : "[insérer bullshit ici]"
+    description : "Design d'une encyclopédie des personnages du jeu Palworld. Animation et interaction des figurines 3D."
   },
   {
     title: "Fractallium",
@@ -22,7 +22,7 @@ const projects = [
     src: "fractallium.png",
     color: "#543c82",
     link: "https://www.fractallium.com",
-    description : "TODO : bullshit time"
+    description : "Conception du site vitrine d'une startup innovante pour décupler l'engagement de son audience. Développement d'une fonctionnalité d'essai gratuit par authentification email."
   },
   {
     title: "Techno Trash",
@@ -30,7 +30,7 @@ const projects = [
     src: "technotrash_all.png",
     color: "#274554",
     link: "https://www.youtube.com/@TechnoTrash",
-    description : "TODO : bullshit time"
+    description : "Co-création d'une chaîne YouTube de vulgarisation technologique (21M vues en 1 an). Amélioration continue de la DA et des techniques de narration."
   },
   {
     title: "Soleil Bleu",
@@ -38,7 +38,7 @@ const projects = [
     src: "data.png",
     color: "#285c9c",
     link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    description : "TODO : bullshit time"
+    description : "Développement d'une solution B2B de dimensionnement de projets photovoltaïques, basé sur le Big Data. Optimisation de l'empreinte carbone du service web."
   },
   {
     title: "Lamonde",
@@ -46,7 +46,7 @@ const projects = [
     src: "Lamonde.png",
     color: "#8a4848",
     link: "https://www.figma.com/proto/pVsYu7B7rLKcKs4X5g5d3D/Lamonde-Immigration-prototype---Bikay?type=design&node-id=157-37447&t=ReDu8lpJenJ7wtKL-1&scaling=contain&page-id=0%3A1&starting-point-node-id=157%3A37447&mode=design",
-    description : "TODO : racheter amandes"
+    description : "Refonte du backoffice d'un service d'immigration canadien. Collecte des processus métiers pour condenser des procédues complexes en un workflow intuitif."
   }
 ]
 
