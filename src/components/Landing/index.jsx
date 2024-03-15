@@ -49,6 +49,7 @@ export default function Home() {
         src="/images/background_zbi.jpg"
         fill={true}
         alt="background"
+        priority={true}
       />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
