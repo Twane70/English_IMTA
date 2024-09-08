@@ -4,12 +4,22 @@ import styles from './interactivity.module.scss';
 
 function DeviceOrientation() {
     const [permissionGranted, setPermissionGranted] = useState(false);
+    const [orientation, setOrientation] = useState({ alpha: 0, beta: 0, gamma: 0, absolute: false });
     const [motion, setMotion] = useState({ x: 0, y: 0, z: 0 });
 
     useEffect(() => {
         if (typeof window !== 'undefined' && location.protocol !== "https:") {
             location.href = "https:" + window.location.href.substring(window.location.protocol.length);
         }
+
+        const handleOrientation = (event) => {
+            setOrientation({
+                alpha: event.alpha || 0,
+                beta: event.beta || 0,
+                gamma: event.gamma || 0,
+                absolute: event.absolute || false,
+            });
+        };
 
         const handleMotion = (event) => {
             setMotion({
@@ -25,6 +35,7 @@ function DeviceOrientation() {
                     const response = await DeviceMotionEvent.requestPermission();
                     if (response === "granted") {
                         setPermissionGranted(true);
+                        window.addEventListener("deviceorientation", handleOrientation);
                         window.addEventListener("devicemotion", handleMotion);
                     }
                 } catch (error) {
@@ -41,6 +52,7 @@ function DeviceOrientation() {
         }
 
         return () => {
+            window.removeEventListener("deviceorientation", handleOrientation);
             window.removeEventListener("devicemotion", handleMotion);
         };
     }, []);
@@ -50,13 +62,18 @@ function DeviceOrientation() {
             <button id="requestPermissionButton" className={styles.button}>Request Permission</button>
             {permissionGranted ? (
                 <div className={styles.dataContainer}>
+                    <h1>Device Orientation</h1>
+                    <p>Alpha: {orientation.alpha.toFixed(2)}</p>
+                    <p>Beta: {orientation.beta.toFixed(2)}</p>
+                    <p>Gamma: {orientation.gamma.toFixed(2)}</p>
+                    <p>Absolute: {orientation.absolute ? 'Yes' : 'No'}</p>
                     <h1>Device Motion</h1>
                     <p>Acceleration X: {motion.x.toFixed(2)}</p>
                     <p>Acceleration Y: {motion.y.toFixed(2)}</p>
                     <p>Acceleration Z: {motion.z.toFixed(2)}</p>
                 </div>
             ) : (
-                <p>Permission to access device motion is required.</p>
+                <p>Permission to access device orientation and motion is required.</p>
             )}
         </div>
     );
