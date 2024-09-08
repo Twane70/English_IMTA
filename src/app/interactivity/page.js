@@ -59,15 +59,15 @@ function DeviceOrientation() {
 
     return (
         <div className={styles.container}>
-            <button id="requestPermissionButton" className={styles.button}>Request Permission</button>
+            <button id="requestPermissionButton" className={styles.button}>Démarrer l'interaction</button>
             {permissionGranted ? (
                 <div className={styles.dataContainer}>
-                    <h1>Device Orientation</h1>
+                    <h1>Orientation</h1>
                     <p>Alpha: {orientation.alpha.toFixed(2)}</p>
                     <p>Beta: {orientation.beta.toFixed(2)}</p>
                     <p>Gamma: {orientation.gamma.toFixed(2)}</p>
                     <p>Absolute: {orientation.absolute ? 'Yes' : 'No'}</p>
-                    <h1>Device Motion</h1>
+                    <h1>Mouvement</h1>
                     <p>Acceleration X: {motion.x.toFixed(2)}</p>
                     <p>Acceleration Y: {motion.y.toFixed(2)}</p>
                     <p>Acceleration Z: {motion.z.toFixed(2)}</p>
